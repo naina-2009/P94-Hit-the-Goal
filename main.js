@@ -105,8 +105,8 @@ function my_keydown(e)
 	{
 		if(ball_x >5)
 		{
-			ball_y = ball_x - 10;
-			console.log("block_image_height = " + block_image_height);
+			ball_x = ball_x - block_image_width;
+			console.log("block_image_width = " + block_image_width);
 			console.log("When down key is pressed, X = " + ball_x + " Y = " + ball_y);
 			canvas.remove(ball_obj);
 			new_image();
@@ -117,8 +117,8 @@ function my_keydown(e)
 	{
 		if(ball_x <=1050)
 		{
-			ball_y = ball_x + 10;
-			console.log("block_image_height = " + block_image_height);
+			ball_x = ball_x + block_image_width;
+			console.log("block_image_width = " + block_image_width);
 			console.log("When down key is pressed, X = " + ball_x + " Y = " + ball_y);
 			canvas.remove(ball_obj);
 			new_image();
